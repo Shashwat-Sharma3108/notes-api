@@ -1,0 +1,21 @@
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+
+# Ignore environment-specific settings
+.env
+
+# Ignore SQLite database file
+*.sqlite3
+
+# Ignore IDE or editor specific files
+.idea/
+.vscode/
+
+# Ignore local development files
+*.bak
+*.sql
+
+# Ignore pipenv or virtualenv files
+Pipfile
+Pipfile.lock
