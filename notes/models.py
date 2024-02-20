@@ -49,7 +49,7 @@ class Note(TimestampedModel, UserStampedModel):
         if self.pk:
             changed_fields = self.tracker.changed()
             for field, original_value in changed_fields.items():
-                if field == "modified_by_id":
+                if field == "updated_by_id":
                     continue
                 new_value = getattr(self, field)
                 # Log the change
