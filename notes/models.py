@@ -39,6 +39,9 @@ class Note(TimestampedModel, UserStampedModel):
     #For tracking changes in models
     tracker = FieldTracker()
 
+    class Meta:
+        permissions = (("download_Note", "Can Download Notes"),)
+
     def __str__(self):
         return f"{self.title} {self.pk}"
 
